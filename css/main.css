@@ -1,9 +1,17 @@
+/* -------- Спецификая ---------- */
 body {
     font-family: Arial, sans-serif;
     color: #000000;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 
 .container {
     width: 960px;
@@ -60,10 +68,11 @@ li {
 
 
 .header {
-    justify-content: space-between;
+    
     display: flex;
     align-items: center;
     font-weight: bold;
+    justify-content: space-around;
 }
 
 .header__logo {
@@ -140,7 +149,7 @@ li {
     width: 100%;
     display: block;
     border: 1px solid #D6D6D6;
-    padding: 32px 15px 32px 15px;
+    padding: 11px 15px 32px 15px;
     text-transform: none;
 }
 
@@ -334,4 +343,188 @@ li {
 
 .footer__text-three {
     font-size: 12px;
+}
+
+           /* MEDIA QUERiES */
+   
+/* 992-1200 */
+
+@media screen and (max-width: 1200px) {
+   
+
+}
+
+/* 768-992 */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 700px;
+    }
+    .offer__cards-item {
+        width:30%;
+    }
+    .request__form  {
+        width: 45%;
+    }
+    .request__message {
+        width: 160%;
+    }
+    .request__elements {
+        width: 85%;
+    }
+    .request__elements-text {
+        width: 48%;
+    }
+    .footer {
+        height: 4px;
+    }
+    .footer__text-one {
+        font-size: 11px;
+    }
+    .footer__button-one,.footer__button-two {
+        width: 18%;
+    }
+    .footer__text-two {
+        width: 18%;
+        font-size: 10px;
+    }
+    .footer__text-three {
+        font-size: 12px;
+    }
+                               
+}
+
+/* 576-768 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 520px;
+    }
+    .header-section a {
+        color: #fff;
+        font-size: 13px;
+    }
+    .header__menu-item {
+        margin-right: 5px;
+    }
+    .offer-section {
+        background: #fff;
+        padding: 23px 0 23px;
+    }
+    .offer__card-title {
+        font-size: 14px;
+    }
+    .offer__card-text {
+        font-size: 12px;
+    }
+    .offer__a-href {
+        font-size: 15px;
+    }
+    .request-section {
+        padding: 23px 0;
+    }
+    .request {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .request__form  {
+        width: 100%;
+    }
+    .request__text {
+        font-size: 11px;
+        padding: 6px 0 15px;
+        margin-top: 0px;
+    }
+    .request__message {
+        width: 90%;
+    }
+    .request__elements {
+        width: 100%;
+    }
+    .request__elements-text {
+        width: 48%;
+    }
+    .footer__text-one {
+        font-size: 11px;
+    }
+    .footer__button-one,.footer__button-two {
+        width: 17%;
+        font-size: 10px;
+    }
+    .footer__text-two {
+        width: 17%;
+        font-size: 10px;
+        padding: 6px 5px 6px 5px;
+    }
+    .footer__text-three {
+        font-size: 12px;
+    }
+}
+
+/* 320-576 */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    .header-section {
+        padding: 3px 0;
+    }
+    .header {
+        text-align: center;
+        display: block;
+    }
+    .header__menu-item {
+        margin-right: 20px;
+    }
+    .offer__title {
+        font-size: 16px;
+    }
+    .offer__text {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+    .offer__cards {
+        flex-direction: column;
+        
+    }
+    .offer__cards>:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .offer__cards-item {
+        width: 100%;   
+    }
+    .request__title {
+        font-size: 16px;
+    }
+    .request__form {
+        margin-top: 20px;
+    }
+    .request__text-wrapp {
+        flex-direction: column;
+    }
+    .request__elements-text {
+        width: 100%;
+        margin: 7px;
+    }
+    .request__elements {
+        padding: 32px 43px 32px;
+    }
+    .footer__text-one {
+        font-size: 9px;
+        margin-right: 4px;
+    }
+    .footer__button-one,.footer__button-two {
+        width: 16%;
+        font-size: 9px;
+        margin-right: 4px;
+    }
+    .footer__text-two {
+        width: 31%;
+        font-size: 10px;
+        padding: 0px;
+        margin-right: 4px;
+    }
+    .footer__text-three {
+        font-size: 9px;
+    }
+    
 }
